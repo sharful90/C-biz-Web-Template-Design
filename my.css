@@ -488,15 +488,13 @@ h3 {
 
 .container_wrapper3 {
 	width: 100%;
-	height: 1220px;
+	height: 1200px;
 	background: #f4f8ff;
 	overflow: hidden;
 }
 
 
-.text_container2 {
-	margin-top: 90px;
-}
+.text_container2 {padding: 66px 0px 66px 0px;}
 
 .text_container2 h2 {
 	font-size: 36px;
@@ -513,40 +511,100 @@ h3 {
 	line-height: 25px;
 }
 
-.images {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 27px;
-	transform: translateY(80px);
+.gallery{
+     display:grid;
+     grid-template-columns:repeat(3,1fr);
+     grid-gap:25px;
 }
+ .gallery img{
+     width:100%;
+     border-radius:10px;
+}
+ .col_1{
+     position: relative;
+     grid-column: 1/2;
+     grid-row: 1/3;
+}
+ .col_2{
+     position: relative;
+}
+ .col_3{
+     position: relative;
+     grid-column: 3/4;
+     grid-row: 1/3;
+}
+ .col_4{
+     position: relative;
+     grid-column: 1/2;
+}
+ .col_5{
+     position: relative;
+     grid-column: 2/3;
+     grid-row: 2/4;
+}
+ .col_6{
+     position: relative;
+     grid-column: 3/4;
+}
+ .back1 {
+     position: absolute;
+     width: 100%;
+     background: #2C3049;
+     color: white;
+     top: 0px;
+     height: 100%;
+     text-align:center;
+     border-radius:10px;
+     transform: scale(0);
+     transition: 0.5s;
 
-.images img {
-	width: 100%;
-	border-radius: 15px;
-	position: relative;
 }
-
-.img1 {
-	grid-column: 1/2;
-	grid-row: 1/3;
+ .col_1:hover .back1 {
+     transform: scale(1);
 }
-
-.img3 {
-	grid-column: 3/4;
-	grid-row: 1/3;
+ .col_2:hover .back1 {
+     transform: scale(1);
 }
-
-.img4 {
-	grid-column: 1/2;
+ .col_3:hover .back1 {
+     transform: scale(1);
 }
-
-.img5 {
-	grid-row: 2/4;
+ .col_4:hover .back1 {
+     transform: scale(1);
 }
-
-.img6 {
-	grid-column: 3/4;
+ .col_5:hover .back1 {
+     transform: scale(1);
 }
+ .col_6:hover .back1 {
+     transform: scale(1);
+}
+.text_wrapper{
+	 display: grid;
+     place-content: center;
+	 height:100%;
+}
+ .text_wrapper h3 {
+     font-size: 25px;
+     font-family: sans-serif;
+}
+ .text_wrapper p{
+     font-family: sans-serif;
+	 line-height:30px;
+}
+.icon_h{
+	width: 30px;
+	height: 50px;
+	margin: auto;
+}
+.icon_h img{
+    padding: 5px;
+    transition:0.3s;
+    margin-top: 20px;
+}
+.icon_h img:hover {
+    background: #c58207;
+    border-radius: initial;
+}
+ 
 
 
 /*section3 end*/
